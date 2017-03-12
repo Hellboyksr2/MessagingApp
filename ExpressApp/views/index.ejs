@@ -8,10 +8,15 @@
     <script src="javascripts/chat.js"></script>
   </head>
   <body>
+    <div id="userDiv">
+      <input id="user" type="text"/>
+      <button id="connectToServer">Connect </button>
+    </div>
     <ul id="messages"></ul>
     <span id="notifyUser"></span>
     <form id="form" action="" onsubmit="return submitfunction();" >
-      <input type="hidden" id="user" value="" /><input id="m" autocomplete="off" onkeyup="notifyTyping();" placeholder="Type yor message here.." /><input type="submit" id="button" value="Send"/>
+      <input id="m" autocomplete="off" onkeyup="notifyTyping();" placeholder="Type yor message here.." />
+      <input type="submit" id="button" value="Send"/>
     </form>
   </body>
 </html>
