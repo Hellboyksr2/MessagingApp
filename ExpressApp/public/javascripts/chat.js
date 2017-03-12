@@ -3,9 +3,9 @@ function submitfunction(){
   var from = $('#user').val();
   var message = $('#m').val();
   if(message != '') {
-  socket.emit('chatMessage', from, message);
-}
-$('#m').val('').focus();
+    socket.emit('chatMessage', from, message);
+  }
+  $('#m').val('').focus();
   return false;
 }
 
